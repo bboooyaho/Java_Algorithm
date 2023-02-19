@@ -11,11 +11,16 @@ public class main
 		/*str = str.toLowerCase();
         cha = Character.toLowerCase(cha);*/ 
 		
-		for(int i = 0; i<str.length(); i++) {
+		//3. for
+		/*for(int i = 0; i<str.length(); i++) {
 			//str -> index access
 			if(str.charAt(i) == cha) ans ++; 
-		}
-
+		}*/
+		
+		//4. foreach,  str ->char array
+		for(char x : str.toCharArray())
+			if(x == cha) ans ++; 
+		
         return ans; 
     }
 
